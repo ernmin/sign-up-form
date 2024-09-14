@@ -1,25 +1,32 @@
+/* figure out flex shrink*/
 body{
     font-family: Roboto;
+    height: 100vh
+}
+
+a {
+    text-decoration: none;
+    color:#596D48
 }
 
 .container {
     display: flex;
-    height:100vh;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    align-content: space-around;
     flex-grow: 1;
 }
 
 .side-image{
-    height: 100vh
+    height: 98vh
 }
 
 .banner {
     flex-grow: 1;
+    flex-shrink: 1;
     font-size: 1.5rem;
     background-color: #f8f8f8;
     padding: 2rem
@@ -31,6 +38,7 @@ body{
 
 .fields {
     flex-grow: 2;
+    flex-shrink: 2;
     padding: 2rem;
 }
 
@@ -61,7 +69,8 @@ input {
 }
 
 .submission {
-    flex-grow: 3;
+    flex-grow: 2;
+    flex-shrink: 2;
     background-color: #f8f8f8;
     padding: 2rem
 }
