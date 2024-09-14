@@ -34,8 +34,19 @@ body{
     padding: 2rem
 }
 
+label {
+    display: block;
+    font-size: 0.75rem;
+}
+
+.fields-text {
+    display: grid;
+}
+
+
 .submission {
     flex-grow: 3;
     background-color: #f8f8f8;
     padding: 2rem
 }
+
