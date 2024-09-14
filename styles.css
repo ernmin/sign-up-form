@@ -21,7 +21,8 @@ a {
 }
 
 .side-image{
-    height: 98vh
+    height: 98vh;
+    min-height: 669px;
 }
 
 .banner {
