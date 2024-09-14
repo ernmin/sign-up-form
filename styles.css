@@ -31,18 +31,34 @@ body{
 
 .fields {
     flex-grow: 2;
-    padding: 2rem
+    padding: 2rem;
 }
 
 label {
     display: block;
     font-size: 0.75rem;
+    
 }
 
 .fields-text {
     display: grid;
+    gap: 5px;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 300px 300px;
+}
+input {
+    width: 200px;
 }
 
+#first-name-field {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+#last-name-field {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
 
 .submission {
     flex-grow: 3;
