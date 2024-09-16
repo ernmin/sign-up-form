@@ -30,13 +30,19 @@ a {
 }
 
 .image-logo{
-    position: absolute;
-    background: black;
     opacity: 0.6;
     height: 20vh;
     min-height: 133.8px;
-    top:5rem;
-    left:5rem;
+}
+
+.image-logo-background {
+    display: flex;
+    position: absolute;
+    min-height: 133.8px;
+    opacity: 0.6;
+    top: 25vh;
+    background: black;
+    width: calc(98vh / 1.5);
 }
 
 .banner {
