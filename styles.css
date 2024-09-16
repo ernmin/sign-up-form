@@ -1,4 +1,7 @@
-/* figure out flex shrink*/
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./Norse-Bold.otf);
+}
 body{
     font-family: Roboto;
     height: 100vh
@@ -30,19 +33,36 @@ a {
 }
 
 .image-logo{
-    opacity: 0.6;
     height: 20vh;
     min-height: 133.8px;
 }
 
 .image-logo-background {
     display: flex;
+    align-items: center;
+    height:22vh;
     position: absolute;
     min-height: 133.8px;
-    opacity: 0.6;
     top: 25vh;
-    background: black;
+    background: rgba(0, 0, 0, 0.6);
     width: calc(98vh / 1.5);
+    min-width: calc(669px / 1.5);
+}
+
+.image-logo-foreground {
+    display: flex;
+    flex-direction: row;
+    min-height: 133.8px;
+    width: calc(98vh / 1.5);
+    min-width: calc(669px / 1.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.image-logo-text {
+    font-size: 6rem;
+    color: white;
+    font-family: Norse-Bold;
 }
 
 .banner {
