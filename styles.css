@@ -98,11 +98,12 @@ label {
 }
 input {
     width: 200px;
-    border: 2px solid #E5E7EB
+    border: 2px solid #E5E7EB;
+    border-radius: 4px;
 }
 
 input:invalid {
-    border: 2px solid red
+    border: 2px solid rgb(247, 137, 137)
 }
 #first-name-field {
     grid-column: 1 / 1;
@@ -132,4 +133,10 @@ input:invalid {
 
 .create:hover{
     box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
+}
+
+input:focus {
+    outline:none;
+    border: 2px solid lightblue;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.19);
 }
